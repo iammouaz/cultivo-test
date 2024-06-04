@@ -1,0 +1,26 @@
+image: cypress/base:14.16.0
+
+stages:
+  - lint
+  - test
+
+variables:
+  CI_DEBUG_TRACE: "false"
+
+cache:
+  paths:
+    - core/node_modules/
+
+before_script:
+  - cd core
+  - npm install
+
+test:
+  stage: test
+  script:
+    - npm run cy:parallel
+  artifacts:
+    when: always
+    paths:
+      - core/cypress/videos
+      - core/cypress/screenshots

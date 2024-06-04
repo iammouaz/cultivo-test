@@ -1,0 +1,46 @@
+###############################################################################
+#                          Generated on phpdocker.io                          #
+###############################################################################
+version: '3.1'
+services:
+#    redis:
+#        image: 'redis:alpine'
+
+    mysql:
+        image: 'mysql:8.0'
+        working_dir: /var/www/mcultivo-auction
+        healthcheck:
+            test: ["CMD-SHELL", "mysqladmin ping -h localhost"]
+            interval: 10s
+            timeout: 20s
+        volumes:
+            - '.:/var/www/mcultivo-auction'
+            - 'db-data:/var/lib/mysql'
+            - './core/database/mcultivo.sql:/docker-entrypoint-initdb.d/setup.sql'
+        environment:
+            - MYSQL_ROOT_PASSWORD=root
+            - MYSQL_DATABASE=auction_staging
+            - MYSQL_USER=auction_staging
+            - MYSQL_PASSWORD=auction_staging
+        ports:
+            - '8082:3306'
+
+    php-fpm:
+        build:
+            context: .
+            dockerfile: docker/php-fpm/Dockerfile
+        working_dir: /var/www/mcultivo-auction
+        depends_on:
+            - mysql
+        volumes:
+            - './core:/var/www/mcultivo-auction'
+            - './core/vendor:/var/www/mcultivo-auction/vendor'
+            - './docker/php-fpm/php-ini-overrides.ini:/etc/php/8.1/fpm/conf.d/99-overrides.ini'
+        ports:
+            - '8089:8000'
+
+#Volumes
+volumes:
+    db-data:
+        driver: local
+

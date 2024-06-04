@@ -1,0 +1,63 @@
+{
+
+  "BR": {
+    "country": "Brazil",
+    "dial_code": "55"
+  },
+  "BI": {
+    "country": "Burundi",
+    "dial_code": "257"
+  },
+  "CO": {
+    "country": "Colombia",
+    "dial_code": "57"
+  },
+  "CR": {
+    "country": "Costa Rica",
+    "dial_code": "506"
+  },
+  "SV": {
+    "country": "El Salvador",
+    "dial_code": "503"
+  },
+  "ET": {
+    "country": "Ethiopia",
+    "dial_code": "251"
+  },
+  "GT": {
+    "country": "Guatemala",
+    "dial_code": "502"
+  },
+  "HN": {
+    "country": "Honduras",
+    "dial_code": "504"
+  },
+  "ID": {
+    "country": "Indonesia",
+    "dial_code": "62"
+  },
+  "KE": {
+    "country": "Kenya",
+    "dial_code": "254"
+  },
+  "MX": {
+    "country": "Mexico",
+    "dial_code": "52"
+  },
+  "NI": {
+    "country": "Nicaragua",
+    "dial_code": "505"
+  },
+  "PE": {
+    "country": "Peru",
+    "dial_code": "51"
+  },
+  "RW": {
+    "country": "Rwanda",
+    "dial_code": "250"
+  },
+  "UG": {
+    "country": "Uganda",
+    "dial_code": "256"
+  }
+}

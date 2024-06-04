@@ -1,0 +1,15 @@
+name,offer_sheet_id,size name,price/lb,merchant_id,short_description,long_description,Status,Units Available,Origin,Producer,Region,Altitude,Variety,Processing Method,Drying,Grade,Screen,Harvest,Tasting Notes,Location,Diff / 100 Lb,NY KCH24 @ 185,Score
+Product 1,114,sack,10,0,the best,the best in the world,boxes data,11,origin data,producer name,region data,altitude data,variety data,process data,drying days data,13,13,2023,tasting notes data,location data,13,13,13
+Product 1,114,sack 35kg,25,0,the best,the best in the world,boxes data,11,origin data,producer name,region data,altitude data,variety data,process data,drying days data,13,13,2023,tasting notes data,location data,13,13,13
+Product 3,115,sack 72kg,40,0,the best,,boxes data,11,origin data,producer name,,,variety data,,,13,,2023,tasting notes data,location data,13,13,13
+Product 4,115,sack 35kg,55,0,"Blue, cloudy and majestic",<br>,,,,producer name,region data,altitude data,,process data,drying days data,,13,2023,tasting notes data,location data,,,13
+Product 5,115,sack 35kg,70,0,the best,<br>,boxes data,11,origin data,producer name,region data,altitude data,variety data,process data,drying days data,13,13,,tasting notes data,location data,13,13,
+Product 6,116,sack 35kg,85,0,,<br>,boxes data,11,origin data,producer name,,altitude data,variety data,,drying days data,13,13,2023,tasting notes data,location data,13,13,13
+Product 7,116,sack 35kg,100,0,the best,,,11,origin data,producer name,region data,,variety data,process data,drying days data,13,13,2023,tasting notes data,,13,13,13
+Product 8,116,sack 35kg,115,0,"Blue, cloudy and majestic",,boxes data,11,,producer name,region data,altitude data,variety data,process data,drying days data,13,,2023,,location data,13,13,13
+Product 9,,sack 35kg,130,0,the best,<br>,boxes data,11,origin data,producer name,region data,altitude data,variety data,process data,drying days data,13,13,2023,tasting notes data,location data,13,13,13
+Product 10,117,sack 35kg,145,0,"Blue, cloudy and majestic",<br>,boxes data,,origin data,producer name,region data,,variety data,process data,drying days data,,13,,tasting notes data,location data,,,
+Product 11,117,sack 35kg,160,0,,<br>,boxes data,11,origin data,producer name,region data,altitude data,variety data,process data,drying days data,13,13,2023,tasting notes data,location data,13,13,13
+Product 1,117,sack 35kg,175,0,"Blue, cloudy and majestic",<br>,boxes data,11,origin data,producer name,region data,altitude data,variety data,process data,drying days data,13,13,,tasting notes data,location data,13,13,13
+Product 13,117,sack 35kg,190,0,the best,<br>,boxes data,11,origin data,producer name,region data,altitude data,variety data,process data,drying days data,13,13,2023,tasting notes data,location data,13,13,13
+Product 13,117,sack 35kg,199,0,the best,<br>,boxes data,11,origin data,producer name,region data,altitude data,variety data,process data,drying days data,13,13,2023,tasting notes data,location data,13,13,13
