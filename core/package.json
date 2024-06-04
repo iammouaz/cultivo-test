@@ -10,7 +10,7 @@
         "production": "mix --production",
         "cy:run": "cypress run",
         "cy:parallel": "cypress-parallel -s cy:run -t 20 -d 'cypress/e2e'",
-        "test": "cypress run --record --key=1a419b82-778d-494c-aecf-d1cb3b8bf554 --parallel"
+        "test": "cypress run --record --key=bac30778-2833-4714-aaaf-565568c28b01 --parallel"
     },
     "devDependencies": {
         "@babel/core": "^7.23.6",
