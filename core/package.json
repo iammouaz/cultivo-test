@@ -9,7 +9,7 @@
         "prod": "npm run production",
         "production": "mix --production",
         "cy:run": "cypress run",
-        "cy:parallel": "cypress-parallel -s cy:run -t 10 -d 'cypress/e2e'",
+        "cy:parallel": "cypress-parallel -s cy:run -t 20 -d 'cypress/e2e'",
         "test": "cypress run --record --key=bac30778-2833-4714-aaaf-565568c28b01 --parallel"
     },
     "devDependencies": {
