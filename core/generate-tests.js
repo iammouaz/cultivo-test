@@ -12,7 +12,7 @@ if (!fs.existsSync(outputDir)) {
     fs.mkdirSync(outputDir, { recursive: true });
 }
 
-for (let i = 1; i <= 20; i++) {
+for (let i = 1; i <= 40; i++) {
     const testContent = template.replace('{LOGIN_NUMBER}', i);
     const filePath = path.join(outputDir, `event-bid-login-${i}.cy.js`);
     
