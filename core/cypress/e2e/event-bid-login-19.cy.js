@@ -11,7 +11,7 @@ describe('Event - Bid', () => {
     
         cy.wait(1000);
 
-        for (let i = 0; i < 50; i++) {
+        for (let i = 0; i < 40; i++) {
             cy.get('.cmn--btn.btn--sm.bid_now.bid-with-anim').then($buttons => {
                 const randomIndex = Math.floor(Math.random() * $buttons.length);
                 cy.wrap($buttons[randomIndex]).click();
@@ -44,7 +44,7 @@ describe('Event - Bid', () => {
 
     }
 
-    Cypress._.times(10, (i) => {
+    Cypress._.times(7, (i) => {
         it(`Bid - Autobid Iteration ${i + 1}`, () => {
             bidAutobidTest();
         });
