@@ -1,4 +1,4 @@
-const loginNumber = 18;
+const loginNumber = 38;
 
 describe('Event - Bid', () => {
 
