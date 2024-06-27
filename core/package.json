@@ -11,7 +11,7 @@
         "cy:run": "cypress run",
         "cy:parallel": "cypress-parallel -s cy:run -t 20 -d 'cypress/e2e'",
         "test": "cypress run --record --key=bac30778-2833-4714-aaaf-565568c28b01 --parallel"
-    },
+    }, 
     "devDependencies": {
         "@babel/core": "^7.23.6",
         "@babel/preset-env": "^7.23.6",
