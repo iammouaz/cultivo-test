@@ -23,11 +23,11 @@ describe('Event - Bid', () => {
                 cy.log('Amount Value:', amountValue);
 
                 // Click on the submit button
-                cy.get('.modal_submit').click();
+                cy.get('.modal_submit').click({ force: true});
                 cy.wait(2000);
 
                 // Confirm the bid
-                cy.get('#bid_form > .modal-footer > .btn--base').click();
+                cy.get('#bid_form > .modal-footer > .btn--base').click({ force: true});
                 cy.wait(5000);
 
 
@@ -51,30 +51,30 @@ describe('Event - Bid', () => {
                             }
                         });
                     });
-                }             
+                }
 
                 cy.get('.cmn--btn.btn--sm.auto_bid_now.bid-with-anim').then($buttons => {
                     const randomIndex = Math.floor(Math.random() * $buttons.length);
-                    cy.wrap($buttons[randomIndex]).click();
+                    cy.wrap($buttons[randomIndex]).click({ force: true});
                 });
                 cy.wait(500);
-                
+
                 cy.get('.d-flex.final-total-price.animate-value > .text-truncate').first().should('exist').invoke('text').then((priceText) => {
                     const price = parseFloat(priceText.replace(/[^0-9.-]+/g, "")); // Remove any non-numeric characters
                     const max_bid = price + 10;
-                    cy.get('#max_bid_in_').type(max_bid.toString());
+                    cy.get('#max_bid_in_').type(max_bid.toString(), { force: true });
                 });
                 cy.wait(500);
-                
-                cy.get('#bidding_step_').type('0.1');
+
+                cy.get('#bidding_step_').type('0.1', { force: true });
                 cy.wait(500);
-                cy.get('#autobid_form > .modal-footer > .btn--base').click();
+                cy.get('#autobid_form > .modal-footer > .btn--base').click({ force: true});
                 cy.wait(5000);
             });
         });
     }
 
-    Cypress._.times(25, (i) => {
+    Cypress._.times(100, (i) => {
         it(`Bid - Autobid Iteration ${i + 1}`, () => {
             bidAutobidTest();
         });
