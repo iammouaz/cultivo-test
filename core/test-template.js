@@ -74,6 +74,7 @@ describe('Event - Bid', () => {
         });
     }
 
+
     Cypress._.times(100, (i) => {
         it(`Bid - Autobid Iteration ${i + 1}`, () => {
             bidAutobidTest();
