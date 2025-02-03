@@ -19,12 +19,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4  # Updated to latest version
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4  # Updated to latest version
         with:
-          node-version: '14'
+          node-version: '20'  # Updated to a more recent LTS version
 
       - name: Install dependencies
         run: |
@@ -38,7 +38,7 @@ jobs:
 
       - name: Upload Cypress videos and screenshots
         if: always()
-        uses: actions/upload-artifact@v3  # Update to the latest version
+        uses: actions/upload-artifact@v4  # Updated from v3 to v4
         with:
           name: cypress-artifacts
           path: |
