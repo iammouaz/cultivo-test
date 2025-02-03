@@ -32,7 +32,7 @@ Cypress.Commands.add('login', (i) => {
 
     cy.get('#name').type(`turnsoletest${i + 1}@mailinator.com`)
 
-    cy.get('#password').type("password")
+    cy.get('#password').type("Turnsole@2024")
 
     // cy.fixture('user-credential.json').then((usersData) => {
 
