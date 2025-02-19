@@ -30,7 +30,7 @@ Cypress.Commands.add('login', (i) => {
 
     cy.get('#name').should('exist');
 
-    cy.get('#name').type(`testuser{i + 1}@mcultivo.com`)
+    cy.get('#name').type(`testuser${i + 1}@mcultivo.com`)
 
     cy.get('#password').type("password")
 
